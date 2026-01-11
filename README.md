@@ -12,8 +12,8 @@ El proyecto está diseñado para ser fácilmente mantenible, separando los datos
 - ⚡ Vite
 - 🎨 Tailwind CSS
 - 🧭 React Router DOM
-- 📦 gh-pages
 - 🧹 ESLint & Prettier
+- 📦 gh-pages
 
 ---
 
