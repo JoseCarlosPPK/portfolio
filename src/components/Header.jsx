@@ -1,15 +1,16 @@
 import { NavLink } from 'react-router-dom'
+import { ROUTES } from '../routes/routes.js'
 
 export function Header() {
    return (
-      <header class='sticky m-1 flex items-center justify-between bg-gray-300/60 p-3'>
+      <header class='sticky top-0 m-1 flex items-center justify-between bg-gray-200 p-3'>
          <h2 className='text-2xl font-extrabold'>José Carlos</h2>
 
          <nav className='flex gap-2'>
-            <MiNavLink to='/'>Sobre mí</MiNavLink>
-            <MiNavLink to='/techs'>Tecnologías</MiNavLink>
-            <MiNavLink to='/projects'>Proyectos</MiNavLink>
-            <MiNavLink to='/experience'>Experiencia</MiNavLink>
+            <MiNavLink to={ROUTES.ABOUT_ME}>Sobre mí</MiNavLink>
+            <MiNavLink to={ROUTES.TECHS}>Tecnologías</MiNavLink>
+            <MiNavLink to={ROUTES.PROJECTS}>Proyectos</MiNavLink>
+            <MiNavLink to={ROUTES.EXPERIENCE}>Experiencia</MiNavLink>
          </nav>
       </header>
    )

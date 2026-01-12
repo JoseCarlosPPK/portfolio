@@ -1,19 +1,20 @@
 import { createHashRouter } from 'react-router-dom'
-import { Layout } from './layout.jsx'
-import { HomePage } from './pages/Home.jsx'
+import { Layout } from '../layout.jsx'
+import { HomePage } from '../pages/Home.jsx'
+import { ROUTES } from './routes.js'
 
 export const router = createHashRouter([
    {
-      path: '/',
+      path: ROUTES.ABOUT_ME,
       Component: Layout,
       children: [
          {
             index: true,
             element: <HomePage />,
          },
-         { path: 'projects', element: <div>Proyectos</div> },
-         { path: 'techs', element: <div>Tecnologías</div> },
-         { path: 'experience', element: <div>Experiencia</div> },
+         { path: ROUTES.PROJECTS, element: <div>Proyectos</div> },
+         { path: ROUTES.TECHS, element: <div>Tecnologías</div> },
+         { path: ROUTES.EXPERIENCE, element: <div>Experiencia</div> },
          {
             path: '*', // <-- esta ruta "comodín" captura TODO lo que no matchee
             element: <div>Oops! Página no encontrada</div>,
