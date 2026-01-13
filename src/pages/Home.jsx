@@ -2,7 +2,7 @@ import avatar from '../assets/avatar.jpeg'
 
 export function HomePage() {
    return (
-      <main className='flex grow flex-wrap items-center justify-center rounded-xl shadow-[0_0_20px_rgba(147,197,253,0.7)]'>
+      <main className='m-3 flex grow flex-wrap items-center justify-center rounded-xl shadow-[0_0_20px_rgba(147,197,253,0.7)]'>
          <img
             className='justify-self-center bg-amber-400'
             src={avatar}
@@ -14,11 +14,11 @@ export function HomePage() {
 
             <p className='line mt-6'>
                ¡Hola! Soy José Carlos López Aguilar, un apasionado Ingeniero
-               Informático con experiencia en desarrollo web y móvil. Me encanta
-               crear soluciones innovadoras y eficientes que mejoren la vida de
-               las personas. Siempre estoy buscando nuevos desafíos y
-               oportunidades para aprender y crecer en el campo de la
-               tecnología.
+               Informático con experiencia en desarrollo web. Me encanta crear
+               soluciones innovadoras y eficientes que mejoren la vida de las
+               personas. Siempre estoy buscando nuevos desafíos y oportunidades
+               para aprender y crecer en el campo de la tecnología.{' '}
+               <span className='text-sm text-amber-700'>Párrafo genérico</span>
             </p>
          </section>
       </main>
