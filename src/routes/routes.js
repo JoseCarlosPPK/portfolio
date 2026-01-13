@@ -1,7 +1,7 @@
 export const ROUTES = {
    ABOUT_ME: '/',
    PROJECTS: '/projects',
-   TECHS: '/techs',
+   SKILLS: '/skills',
    EXPERIENCE: '/experience',
 }
 
