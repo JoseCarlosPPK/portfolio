@@ -10,7 +10,7 @@ export function Header() {
 
    return (
       <header class='header-pc'>
-         <h2 className='text-2xl font-extrabold'>José Carlos</h2>
+         <h2 className='gradient-text text-3xl font-extrabold'>José Carlos</h2>
 
          <button className='navIcon' onClick={onClickMenu}>
             <MenuIcon />
