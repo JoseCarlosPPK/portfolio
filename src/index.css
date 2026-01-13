@@ -26,7 +26,7 @@
 }
 
 .header-pc {
-   @apply sticky top-0 m-1 flex items-center justify-between bg-gray-200 p-3;
+   @apply sticky top-0 flex items-center justify-between bg-gray-200 p-3;
    position: relative;
 }
 
