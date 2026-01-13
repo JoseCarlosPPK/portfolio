@@ -27,7 +27,6 @@
 
 .header-pc {
    @apply sticky top-0 flex items-center justify-between bg-gray-200 p-3;
-   position: relative;
 }
 
 .nav-pc {
