@@ -1,16 +1,34 @@
 import { NavLink } from 'react-router-dom'
+import { MenuIcon } from '../assets/menu.jsx'
 import { ROUTES } from '../routes/routes.js'
 
 export function Header() {
+   function onClickMenu() {
+      const nav = document.getElementById('nav')
+      nav.classList.toggle('showMenu')
+   }
+
    return (
-      <header class='sticky top-0 m-1 flex items-center justify-between bg-gray-200 p-3'>
+      <header class='header-pc'>
          <h2 className='text-2xl font-extrabold'>José Carlos</h2>
 
-         <nav className='flex gap-2'>
-            <MiNavLink to={ROUTES.ABOUT_ME}>Sobre mí</MiNavLink>
-            <MiNavLink to={ROUTES.SKILLS}>Habilidades</MiNavLink>
-            <MiNavLink to={ROUTES.PROJECTS}>Proyectos</MiNavLink>
-            <MiNavLink to={ROUTES.EXPERIENCE}>Experiencia</MiNavLink>
+         <button className='navIcon' onClick={onClickMenu}>
+            <MenuIcon />
+         </button>
+
+         <nav className='nav-pc' id='nav'>
+            <MiNavLink to={ROUTES.ABOUT_ME} onClick={onClickMenu}>
+               Sobre mí
+            </MiNavLink>
+            <MiNavLink to={ROUTES.SKILLS} onClick={onClickMenu}>
+               Habilidades
+            </MiNavLink>
+            <MiNavLink to={ROUTES.PROJECTS} onClick={onClickMenu}>
+               Proyectos
+            </MiNavLink>
+            <MiNavLink to={ROUTES.EXPERIENCE} onClick={onClickMenu}>
+               Experiencia
+            </MiNavLink>
          </nav>
       </header>
    )

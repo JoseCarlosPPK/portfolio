@@ -6,8 +6,8 @@
    font-weight: 400;
 
    color-scheme: light dark;
-   color: rgba(255, 255, 255, 0.87);
-   background-color: #242424;
+   color: #213547;
+   background-color: #ffffff;
 
    font-synthesis: none;
    text-rendering: optimizeLegibility;
@@ -25,15 +25,48 @@
    font-weight: 600;
 }
 
-@media (prefers-color-scheme: light) {
-   :root {
-      color: #213547;
-      background-color: #ffffff;
+.header-pc {
+   @apply sticky top-0 m-1 flex items-center justify-between bg-gray-200 p-3;
+   position: relative;
+}
+
+.nav-pc {
+   @apply flex gap-2;
+}
+
+.navIcon {
+   display: none;
+}
+
+@media (max-width: 640px) {
+   .navIcon {
+      display: block;
+      margin-left: auto;
+      cursor: pointer;
+      @apply rounded-md hover:bg-blue-300;
    }
-   a:hover {
-      color: #747bff;
+
+   .nav-pc {
+      position: absolute;
+      top: 100%; /* justo debajo del header */
+      left: 0;
+      width: 100%;
+      flex-direction: column;
+      @apply bg-gray-200;
+      overflow: hidden;
+      text-align: center;
+
+      /* animación */
+      max-height: 0;
+      opacity: 0;
+      transition:
+         max-height 0.5s ease,
+         opacity 0.5s ease;
    }
-   button {
-      background-color: #f9f9f9;
+
+   .nav-pc.showMenu {
+      /* overflow-y: auto; */
+      max-height: 100vh; /* suficiente para los links */
+      opacity: 1;
    }
 }
