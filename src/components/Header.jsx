@@ -8,7 +8,7 @@ export function Header() {
 
          <nav className='flex gap-2'>
             <MiNavLink to={ROUTES.ABOUT_ME}>Sobre mí</MiNavLink>
-            <MiNavLink to={ROUTES.TECHS}>Tecnologías</MiNavLink>
+            <MiNavLink to={ROUTES.SKILLS}>Habilidades</MiNavLink>
             <MiNavLink to={ROUTES.PROJECTS}>Proyectos</MiNavLink>
             <MiNavLink to={ROUTES.EXPERIENCE}>Experiencia</MiNavLink>
          </nav>

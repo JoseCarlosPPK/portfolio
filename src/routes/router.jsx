@@ -13,7 +13,7 @@ export const router = createHashRouter([
             element: <HomePage />,
          },
          { path: ROUTES.PROJECTS, element: <div>Proyectos</div> },
-         { path: ROUTES.TECHS, element: <div>Tecnologías</div> },
+         { path: ROUTES.SKILLS, element: <div>Habilidades</div> },
          { path: ROUTES.EXPERIENCE, element: <div>Experiencia</div> },
          {
             path: '*', // <-- esta ruta "comodín" captura TODO lo que no matchee
