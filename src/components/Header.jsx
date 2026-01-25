@@ -9,7 +9,7 @@ export function Header() {
    }
 
    return (
-      <header class='header-pc'>
+      <header className='header-pc'>
          <h2 className='gradient-text text-3xl font-extrabold'>José Carlos</h2>
 
          <button className='navIcon' onClick={onClickMenu}>
